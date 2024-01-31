@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:  #5a95c4;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.divisoria{
+    border: 2px solid #5a95c4;
+    margin: 20px 0;
+}
+header{
+    background-color: #5a95c4;
+    margin-bottom: 40px;
+}
+header h1,
+header li a,
+.Card button{
+    color: #fff;
+}
+header .conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+.conteiner{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header li{
+    display: inline;
+    padding: 8px;
+    list-style: none;
+    margin-left: 16px;
+}
+header li:hover{
+    border-top: 2px solid rgb(167, 53, 53);
+}
+header li a{
+    text-decoration: none;
+}
+section{
+    margin: 80px 0;
+}
+section img{
+    max-width: 400px;
+}
+section .sobre-loja{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+}
+section .Cards{
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    column-gap: 3%;
+}
+.Cards{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+.Card button{
+    padding: 8px;
+    margin: 0 auto;
+    background-color: rgb(57, 165, 57);
+    border: none;
+    border-radius: 5px;
+    margin: 16px 0;
+}
+.Card button:hover {
+    background-color: rgb(143, 211, 143);
+    color: #5a95c4;
+}
+.Cards img{
+    max-width: 200px;
+    height: 150px;
+}
+p, .Card h2 {
+    color: rgb(66, 66, 66);
+}
+@media screen and (min-width: 641px) and (max-width:1023px) {
+    .conteiner{
+        width: 90%;
+        margin: 0 auto;
+    }
+    section img{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    section .sobre-loja{
+        display: block;
+    }
+    section .Cards{
+        display: grid;
+        grid-template-columns: repeat(2, 47%);
+        column-gap: 3%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .conteiner{
+        width: 90%;
+        margin: 0 auto;
+    }
+    section img{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    section .sobre-loja{
+        display: block;
+    }
+    section .Cards{
+        display: block;
+        justify-content: center;
+        float: right;
+    }
+}
