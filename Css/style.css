@@ -73,9 +73,10 @@ section .Cards{
     background-color: rgb(143, 211, 143);
     color: #5a95c4;
 }
-.Cards img{
-    max-width: 200px;
-    height: 150px;
+.Card img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
 }
 p, .Card h2 {
     color: rgb(66, 66, 66);
@@ -98,6 +99,11 @@ p, .Card h2 {
         grid-template-columns: repeat(2, 47%);
         column-gap: 3%;
     }
+    .Card img {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+    }
 }
 @media screen and (max-width: 640px) {
     .conteiner{
@@ -106,7 +112,7 @@ p, .Card h2 {
     }
     section img{
         width: 100%;
-        max-width: 100%;
+        max-width: 400px;
         margin-bottom: 40px;
     }
     section .sobre-loja{
@@ -115,6 +121,11 @@ p, .Card h2 {
     section .Cards{
         display: block;
         justify-content: center;
-        float: right;
+        align-items: center;
+    }
+    .Card img{
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
     }
 }
